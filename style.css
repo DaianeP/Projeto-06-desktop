@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-default: 'Staatliches', cursive;
+    --ff-tiny: 'Palanquin', sans-serif;
+
+    --bg-informacion: #8E9AAF;
+    --bg-text: #CBC0D3;
+    --bg-main: #FFFFFF;
+
+    font-size: 62.5%;
+    --fs-big: 4.8rem;
+    --fs-small: 2.4rem;
+    --fs-footer: 1.4rem;
+
+    --fc-primary: #FFFFFF;
+    --fc-second: #4A4E69;
+
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.informacion {
+    background: var(--bg-informacion);
+}
+
+#logo img {
+    margin: 3.2rem auto;
+    display: block;
+}
+
+.title h1 {
+    font-size: var(--fs-big);
+    background-color: var(--bg-text);
+    color: var(--fc-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: var(--fs-small);
+    color: var(--fc-primary);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 5.2rem;
+}
+
+.contentcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-main);
+    padding: 6.4rem;
+}
+
+.contentcards .content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 32px;
+
+}
+
+.contentcards .content .firstcol {
+    display: grid;
+    row-gap: 32px;
+}
+
+.contentcards .content .secondcol {
+    display: grid;
+    row-gap: 32px;
+
+}
+
+.contentcards .content .thirdcol {
+    display: grid;
+    row-gap: 32px;
+}
+
+.containerImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.paletas {
+    background-image: url("icecream1.png");
+    width: 33rem;
+    height: 25rem;
+}
+
+.shakes {
+    background-image: url("icecream2.png");
+    width: 33rem;
+    height: 45rem;
+}
+
+.massas {
+    background-image: url(icecream3.png);
+    width: 33rem;
+    height: 25rem;
+}
+
+.picoles {
+    background-image: url(icecream4.png);
+    width: 33rem;
+    height: 45rem;
+}
+
+footer p {
+    font-size: 1.4rem;
+    line-height: 28px;
+    color: var(--fc-second);
+    margin-top: 5rem;
+
+}
